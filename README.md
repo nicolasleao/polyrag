@@ -37,6 +37,7 @@ PUT /collections/polyrag_documents
     }
 }
 ```
+![image](https://github.com/nicolasleao/polyrag/assets/29788777/69835c36-6645-46de-9261-d3931c462d84)
 
 ## Indexing:
 
@@ -52,9 +53,11 @@ You can run a simple chat loop to ask questions about your documents by running:
 ```
 python chat.py
 ```
+[Screencast from 25-06-2024 14:45:07.webm](https://github.com/nicolasleao/polyrag/assets/29788777/783058f5-99c7-48d2-bd33-4c6e791b049d)
+
 
 # FastAPI server
-This tool can also be served as an API powered by FastAPI, to do that, ensure you've installed all dependencies and run the following:
+This tool can also be served as an API powered by FastAPI. To do that, ensure you've installed all dependencies and run the following:
 ```
 fastapi run server.py
 ```

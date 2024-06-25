@@ -20,6 +20,14 @@ index = VectorStoreIndex.from_vector_store(
 )
 query_engine = index.as_query_engine()
 
-# Perform a query and print the response
-response = query_engine.query("What does the author think about Star Trek? In One line")
-print(response)
+
+print('PolyRAG started, ask any questions about your documents or type \'bye\' to leave')
+# chat loop to perform a query and print the response
+running = True
+while running:
+    query = input('$ polyrag -> ')
+    if query == 'quit' or query == 'exit' or query == 'bye' or query == 'close':
+        running = False
+    else:
+        response = query_engine.query(query)
+        print(response)
